@@ -21,8 +21,7 @@ def main():
     if args.command == "add":
         todo.add(args.name)
     elif args.command == "list":
-        todo.list_json()
-    # done, delete 분기는 직접 채워라
+        todo.show_todos()
     elif args.command == "done":
         todo.done(args.number)
     elif args.command == "delete":
