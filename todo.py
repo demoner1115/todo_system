@@ -19,7 +19,7 @@ def add(name):
     todos.append({"name": name, "success": False})
     save_todos(todos)
 
-def list_json():
+def show_todos():
     todos = load_todos()
     if not todos:
         print("할 일이 없습니다.")
